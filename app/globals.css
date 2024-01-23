@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .event-signup form {
+    padding: 1rem;
+  }
+
+  .event-signup form label {
+    font-size: 0.875rem;
+  }
+
+  .event-signup form input,
+  .event-signup form textarea,
+  .event-signup form button {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+}
