@@ -6,6 +6,10 @@ import EventSignup from "./eventSignup";
 export default function Home() {
   const [showSignup, setShowSignup] = useState(false);
 
+  useEffect(() => {
+    document.title = "Performates";
+  }, []);
+
   return (
     <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center py-2">
       <Head>
