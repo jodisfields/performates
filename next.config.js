@@ -11,7 +11,7 @@ const nextConfig = {
   // skipTrailingSlashRedirect: true,
 
   // Optional: Change the output dir`
-  distDir: 'public',
+  distDir: 'dist',
 };
 
 module.exports = nextConfig;
