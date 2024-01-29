@@ -1,6 +1,6 @@
 # Performates Frontend
 
-This project consists of a frontend application built with React and Chakra UI. The backend functionality is powered by Firebase.
+This project consists of a frontend application built with React and Next.JS. The backend functionality is powered by Firebase.
 
 ## Frontend
 
@@ -9,11 +9,6 @@ The frontend includes a signup form for events, integrated with the Eventbrite A
 ## Backend
 
 Firebase is used as the backend solution. It handles user authentication, data storage, and API interactions with Eventbrite for event management.
-
-## Firebase Integration
-
-- Set up your Firebase project and configure the Firebase SDK in your application.
-- Ensure Firebase authentication and database services are properly configured for your project.
 
 ## Eventbrite API Integration
 
