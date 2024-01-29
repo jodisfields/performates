@@ -17,7 +17,11 @@ Firebase is used as the backend solution. It handles user authentication, data s
 ## Setup
 
 - Set up environment variables for both Firebase and Eventbrite API keys.
+  - `cp .env.example .env && vim .env`
+  - include your own environment variables.
+  - `:wq`
 - Run `npm install` in the project directory to install dependencies.
 - Use `npm start` to run the frontend application.
+- Use `npm build` to run the frontend application.
 
 Note: Backend operations are managed through Firebase, so no separate backend server setup is required.
