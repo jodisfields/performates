@@ -7,7 +7,7 @@ export default function Home() {
   const [showSignup, setShowSignup] = useState(false);
 
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center py-2">
+    <div className="page bg-black text-white min-h-screen flex flex-col items-center justify-center py-2">
       <Head>
         <title>Performates</title>
         <link rel="icon" href="/favicon.ico" />
