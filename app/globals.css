@@ -18,11 +18,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+      to bottom,
       transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
-
 
 @layer utilities {
   .text-balance {
@@ -37,29 +39,6 @@ body {
 
   .event-signup form label {
     font-size: 0.875rem;
-  }
-  .event-signup-enter {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-
-  .event-signup-enter-active {
-    opacity: 1;
-    transform: scale(1);
-
-
-    transition: opacity 300ms, transform 300ms;
-  }
-
-  .event-signup-exit {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-  .event-signup-exit-active {
-    opacity: 0;
-    transform: scale(0.9);
-    transition: opacity 300ms, transform 300ms;
   }
 
   .event-signup form input,
