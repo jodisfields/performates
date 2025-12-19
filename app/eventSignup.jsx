@@ -18,6 +18,9 @@ const EventSignup = ({ event, onClose }) => {
     setIsSubmitting(true);
 
     try {
+      if (!db) {
+        throw new Error("Database not available");
+      }
       await addDoc(collection(db, "attendees"), {
         name,
         email,
