@@ -29,9 +29,59 @@ body {
   }
 }
 
+/* Event Card Styles */
+.event-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.upcoming-events {
+  animation: fadeInUp 0.5s ease-out 0.1s both;
+}
+
+/* Event Signup Modal */
+.event-signup {
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Mobile Responsive Adjustments */
 @media screen and (max-width: 640px) {
+  .event-signup {
+    margin: 1rem;
+  }
+
   .event-signup form {
-    padding: 1rem;
+    padding: 0;
   }
 
   .event-signup form label {
@@ -39,13 +89,18 @@ body {
   }
 
   .event-signup form input,
+  .event-signup form select,
   .event-signup form textarea,
   .event-signup form button {
-    font-size: 0.875rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .event-card {
+    padding: 1.25rem;
   }
 }
 
+/* Hero Section Enhancements */
 .hero {
   background: linear-gradient(to bottom, #00f260, #0575e6);
   padding: 4rem 0;
@@ -66,12 +121,35 @@ body {
   gap: 1rem;
 }
 
-@keyframes fadeIn {
-  from {
+/* Ping animation for live indicator */
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
     opacity: 0;
   }
+}
 
-  to {
-    opacity: 1;
-  }
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Button hover effects */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles for accessibility */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for interactive elements */
+a,
+button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
 }
