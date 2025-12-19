@@ -34,7 +34,7 @@ const EventSignup = ({ onClose }) => {
       onClick={handleClose}
     >
       <div
-        className="event-signup bg-white rounded-lg p-8 shadow-md transform transition-all duration-300 ease-in-out"
+        className="event-signup relative bg-white rounded-lg p-8 shadow-md transform transition-all duration-300 ease-in-out"
         style={{
           opacity: 1,
           scale: 1,
