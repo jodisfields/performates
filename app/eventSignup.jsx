@@ -11,6 +11,9 @@ const EventSignup = ({ onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      if (!db) {
+        throw new Error("Database not available");
+      }
       await addDoc(collection(db, "attendees"), {
         name,
         email,
